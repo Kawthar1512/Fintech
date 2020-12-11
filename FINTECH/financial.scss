@@ -1,0 +1,812 @@
+$dflex : flex;
+$nill: none;
+$white: white;
+$mycolor: teal;
+
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header {
+    display: $dflex;
+    justify-content: space-around;
+    padding-top: 14px;
+    background: rgba(0, 128, 128, 0.692);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  #logo {
+    margin-top: 2px;
+    margin-left: -70px;
+    color: $white;
+  }
+  
+  .bnone {
+    border: $nill;
+    color: $white;
+    background: transparent;
+    font-size: 18px;
+    padding: 8px;
+    margin-right: 15px;
+    outline: $white;
+  }
+  
+  .bnone:hover {
+    background: $mycolor;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  #buy {
+    margin-left: -50px;
+  }
+  
+  #fin {
+    margin-right: 0;
+  }
+  
+  .out {
+    background: transparent;
+    border: 2px solid $white;
+    border-radius: 6px;
+    font-size: 18px;
+    color: $white;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  
+  .out:hover {
+    background: teal;
+    color: $white;
+  }
+  
+  .bsell {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .bsell h1 {
+    color: $mycolor;
+    font-size: 50px;
+    z-index: 0;
+    margin-top: 80px;
+  }
+  
+  .bsell p {
+    color: teal;
+    font-size: 20px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+  
+  .bsell input {
+    width: 23%;
+    padding: 13px 10px;
+    border-radius: 7px;
+    border: 1px solid teal;
+    font-size: 17px;
+    outline: teal;
+  }
+  
+  .bsell input::placeholder {
+    color: teal;
+    font-size: 16px;
+  }
+  
+  .bsell button {
+    border: none;
+    padding: 13px 10px;
+    border-radius: 7px;
+    background: teal;
+    color: $white;
+    font-size: 17px;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 128, 128, 0.685);
+  }
+  
+  .tri {
+    width: 0;
+    height: 0;
+    border-bottom: 120px solid rgba(0, 128, 128, 0.726);
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    transform: rotate(5deg);
+    position: absolute;
+    top: 159px;
+    right: 192px;
+    z-index: -1;
+  }
+  
+  .stri {
+    width: 0;
+    height: 0;
+    border-bottom: 120px solid rgba(0, 128, 128, 0.315);
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    transform: rotate(60deg);
+    position: absolute;
+    right: 240px;
+    top: 129px;
+    z-index: -200;
+  }
+  
+  td img {
+    width: 35px;
+    margin: 10px 10px 0px 0px;
+  }
+  
+  #name {
+    display: flex;
+  }
+  
+  .mytable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 50px auto;
+    border: $nill;
+    padding-left: 20px;
+  }
+  
+  .mytable th {
+    padding: 12px 0px 12px 30px;
+    text-align: left;
+    background: #f9f9f9;
+    font-size: 15px;
+  }
+  
+  .mytable td {
+    background: #f9f9f9;
+    border-top: 1px solid rgba(211, 211, 211, 0.774);
+    padding-left: 30px;
+  }
+  td p{
+    font-size: 14px;
+  }
+  
+  .mytable span {
+    color: gray;
+  }
+  
+  .namestext {
+    display: flex;
+  }
+  
+  .namestext span {
+    margin-top: 21px;
+    margin-left: 10px;
+  }
+  
+  .trade {
+    margin-top: 60px;
+    width: 72%;
+    border: 1px solid teal;
+    border-radius: 20px;
+    height: 270px;
+    position: relative;
+    left: 200px;
+    padding-left: 30px;
+  }
+  
+  .trade h1 {
+    font-size: 50px;
+    color: teal;
+    margin-bottom: 80px;
+  }
+  
+  .row {
+    display: flex;
+    
+  }
+  
+  #reg {
+    background: $mycolor;
+    border: $nill;
+    color: $white;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px rgba(0, 128, 128, 0.795);
+  }
+  
+  #trn {
+    background: $white;
+    border: 1px solid $mycolor;
+    color: $mycolor;
+    margin-left: 15px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px rgba(0, 128, 128, 0.795);
+  }
+  
+  .cryptimg {
+    position: absolute;
+    right: 200px;
+    top: 820px;
+  }
+  
+  .cryptimg img {
+    height: 350px;
+    width: 360px;
+    border-radius: 40px;
+  }
+  
+  .round {
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 2px dotted $mycolor;
+    border-radius: 100%;
+    position: absolute;
+    top: 800px;
+    left: 100px;
+    animation-name: forround;
+    animation-duration: 5s;
+    animation-iteration-count: 20;
+  }
+  
+  @keyframes forround {
+    0% {
+      transform: rotate(20deg);
+    }
+    10% {
+      transform: rotate(30deg);
+    }
+    20% {
+      transform: rotate(40deg);
+    }
+    30% {
+      transform: rotate(50deg);
+    }
+    40% {
+        transform: rotate(60deg);
+      }
+    50% {
+        transform: rotate(70deg);
+      }
+    70% {
+      transform: rotate(80deg);
+    }
+    80% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(200deg);
+    }
+  }
+  .nround {
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 2px dotted $mycolor;
+    border-radius: 100%;
+    position: absolute;
+    left: 90px;
+    top: 810px;
+    animation-name: fornround;
+    animation-duration: 5s;
+    animation-iteration-count: 20;
+  }
+  
+  @keyframes fornround {
+    0% {
+      transform: rotate(20deg);
+    }
+    10% {
+      transform: rotate(30deg);
+    }
+    20% {
+      transform: rotate(40deg);
+    }
+    30% {
+      transform: rotate(50deg);
+    }
+    70% {
+      transform: rotate(70deg);
+    }
+    80% {
+      transform: rotate(80deg);
+    }
+    100% {
+      transform: rotate(200deg);
+    }
+  }
+  
+  footer {
+  position: relative;
+//   left: 10px;
+//   bottom: 4px;
+  top: 150px;
+  border-top: 1px solid lightgray;
+  padding-top:30px ;
+  text-align: center;
+  padding-bottom: 30px;
+  
+  
+  }
+  footer a{
+      text-decoration: $nill;
+      color: gray;
+      padding: 10px 10px;
+    //   padding-bottom: 15px;
+    //   font-size: 35px;
+  }
+  footer a:hover{
+      background: rgba(0, 128, 128, 0.616);
+      border-radius: 10px;
+      padding: 10px 10px;
+      color:$white;
+      font-size: 20px;
+
+  }
+@media screen and (max-width:1000px){
+  .cryptimg {
+    position: absolute;
+    right: 7px;
+    // bottom: 0px;
+   top: 826px;
+   margin-bottom: 0px;
+    // display: block;
+  }
+  
+  .cryptimg img {
+    height: 300px;
+    width: 320px;
+    border-radius: 10px;
+   
+    // display: block;
+  }
+  .trade {
+    margin-top: 70px;
+    width: 100%;
+    border: 1px solid teal;
+    border-radius: 10px;
+    height: 200px;
+    position: relative;
+    left: 0px;
+    padding: 10px 0px 0px 5px;
+    // text-align: center;
+  }
+  .trade h1 {
+    font-size: 30px;
+    color: teal;
+    margin-bottom: 40px;
+  }
+
+}
+
+
+
+
+  @media screen and (max-width: 900px){
+    .bsell input {
+      width: 50%;
+      padding: 10px 16px;
+      border-radius: 7px;
+      border: 1px solid teal;
+      font-size: 11px;
+      outline: teal;
+    }
+    .bsell button {
+      border: none;
+      margin-top: 12px;
+      padding: 13px 13px;
+      border-radius: 7px;
+      background: teal;
+      color: $white;
+      font-size: 17px;
+      outline: none;
+      box-shadow: 0px 0px 5px rgba(0, 128, 128, 0.685);
+    }
+    .bsell {
+      text-align: center;
+      margin-top: 100px;
+      display: inline-block;
+    }
+    
+    .bsell h1 {
+      color: $mycolor;
+      font-size: 48px;
+      z-index: 0;
+      margin-top: -60px;
+      padding-left: 20px;
+    }
+    
+    .bsell p {
+      color: teal;
+      font-size: 20px;
+      margin-top: -10px;
+      margin-bottom: 30px;
+    }
+    .tri {
+      width: 0;
+      height: 0;
+      border-bottom: 85px solid rgba(0, 128, 128, 0.726);
+      border-left: 85px solid transparent;
+      border-right: 85px solid transparent;
+      transform: rotate(5deg);
+      position: absolute;
+      top: 98px;
+      right: 12px;
+      z-index: -1;
+    }
+    
+    .stri {
+      width: 0;
+      height: 0;
+      border-bottom: 85px solid rgba(0, 128, 128, 0.315);
+      border-left: 85px solid transparent;
+      border-right: 85px solid transparent;
+      transform: rotate(60deg);
+      position: absolute;
+      right: 20px;
+      top: 107px;
+      z-index: -100;
+    }
+    .nround {
+      width:90px;
+      height:90px;
+      background: transparent;
+      border: 2px dotted $mycolor;
+      border-radius: 100%;
+      position: absolute;
+      left: 30px;
+      bottom: 40px;
+      animation-name: fornround;
+      animation-duration: 5s;
+      animation-iteration-count: 20;
+  
+    }
+    .round {
+      width: 90px;
+      height: 90px;
+      background: transparent;
+      border: 2px dotted $mycolor;
+      border-radius: 100%;
+      position: absolute;
+      bottom: 40px;
+      left: 25px;
+      animation-name: forround;
+      animation-duration: 5s;
+      animation-iteration-count: 20;
+     
+    }
+    .mytable {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 80%;
+      margin: 50px 0px 20px 30px;
+      border: $nill;
+      padding-left: 20px;
+     
+    }
+    
+    .mytable th {
+      padding: 10px 0px 10px 30px;
+      text-align: left;
+      background: #f9f9f9;
+      color: teal;
+    }
+    
+    .mytable td {
+      background: #f9f9f9;
+      border-top: 1px solid rgba(211, 211, 211, 0.774);
+      padding-left: 0px;
+      color: seagreen;
+    }
+    
+    .mytable span {
+      color: gray;
+      font-size: 14px;
+    }
+    .cryptimg {
+      position: absolute;
+      right: 7px;
+      // bottom: 0px;
+     top: 826px;
+     margin-bottom: 0px;
+      // display: block;
+    }
+    
+    .cryptimg img {
+      height: 200px;
+      width: 320px;
+      border-radius: 10px;
+     
+      // display: block;
+    }
+    .trade {
+      margin-top: 70px;
+      width: 100%;
+      border: 1px solid teal;
+      border-radius: 10px;
+      height: 200px;
+      position: relative;
+      left: 10px;
+      padding: 10px 0px 0px 5px;
+      // text-align: center;
+    }
+    .trade h1 {
+      font-size: 30px;
+      color: teal;
+      margin-bottom: 40px;
+    }
+    footer {
+      position: relative;
+      
+    //   left: 10px;
+    //   bottom: 4px;
+      top: 60px;
+      border-top: 1px solid lightgray;
+      padding-top:30px ;
+      text-align: center;
+      padding-bottom: 30px;
+      
+      
+      }
+  }
+
+  @media screen and (max-width:600px){
+      .header{
+        display: $dflex;
+        justify-content: space-around;
+        padding-top: 14px;
+        background: rgba(0, 128, 128, 0.692);
+        position: sticky;
+        top: 0;
+        z-index: 200;
+      }
+      #logo {
+        margin-top: 2px;
+        // margin-left: -70px;
+        color: $white;
+        // margin-left: 200px;
+      }
+      .out {
+        background: transparent;
+        border: 2px solid $white;
+        border-radius: 6px;
+        font-size: 18px;
+        color: $white;
+        padding: 0px;
+        margin-left: 0px;
+      }
+      .bnone {
+        border: $nill;
+        color: $white;
+        background: transparent;
+        font-size: 20px;
+        padding: 8px;
+        margin-right: 15px;
+        outline: $white;
+      }
+      .bsell {
+        text-align: center;
+        margin-top: 100px;
+        display: block;
+      }
+      
+      .bsell h1 {
+        color: $mycolor;
+        font-size: 35px;
+        z-index: 0;
+        margin-top: -60px;
+      }
+      
+      .bsell p {
+        color: teal;
+        font-size: 15px;
+        margin-top: -10px;
+        margin-bottom: 30px;
+      }
+      
+      .bsell input {
+        width: 80%;
+        padding: 10px 4px;
+        border-radius: 7px;
+        border: 1px solid teal;
+        font-size: 12px;
+        outline: teal;
+      }
+      
+      .bsell input::placeholder {
+        color: teal;
+        font-size: 16px;
+      }
+      
+      .bsell button {
+        border: none;
+        margin-top: 12px;
+        padding: 9px 16px;
+        border-radius: 7px;
+        background: teal;
+        color: $white;
+        font-size: 17px;
+        outline: none;
+        box-shadow: 0px 0px 5px rgba(0, 128, 128, 0.685);
+      }
+      .tri {
+        width: 0;
+        height: 0;
+        border-bottom: 50px solid rgba(0, 128, 128, 0.726);
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        transform: rotate(5deg);
+        position: absolute;
+        top: 98px;
+        right: 12px;
+        z-index: -1;
+      }
+      
+      .stri {
+        width: 0;
+        height: 0;
+        border-bottom: 50px solid rgba(0, 128, 128, 0.315);
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        transform: rotate(60deg);
+        position: absolute;
+        right: 20px;
+        top: 107px;
+        z-index: -100;
+      }
+      .mtri {
+        width: 0;
+        height: 0;
+        border-bottom: 50px solid rgba(0, 128, 128, 0.726);
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        transform: rotate(5deg);
+        position: absolute;
+        top: 31px;
+        right: 9px;
+        z-index: -1;
+      }
+      
+      .mstri {
+        width: 0;
+        height: 0;
+        border-bottom: 50px solid rgba(0, 128, 128, 0.315);
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        transform: rotate(60deg);
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        z-index: -100;
+      }
+      #fortable{
+        overflow-x: scroll;
+      }
+      .mytable {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 30%;
+        margin: 50px 0px 20px 20px;
+        border: $nill;
+        padding-left: 20px;
+       
+      }
+      
+      .mytable th {
+        padding: 10px 0px 10px 30px;
+        text-align: left;
+        background: #f9f9f9;
+        color: teal;
+      }
+      
+      .mytable td {
+        background: #f9f9f9;
+        border-top: 1px solid rgba(211, 211, 211, 0.774);
+        padding-left: 0px;
+        color: seagreen;
+      }
+      
+      .mytable span {
+        color: gray;
+        font-size: 14px;
+      }
+      .trade {
+        margin-top: 260px;
+        width: 100%;
+        border: 1px solid teal;
+        border-radius: 10px;
+        height: 200px;
+        position: relative;
+        left: 10px;
+        padding: 10px 0px 0px 5px;
+        text-align: center;
+      }
+      .trade h1 {
+        font-size: 30px;
+        color: teal;
+        margin-bottom: 40px;
+      }
+      .cryptimg {
+        position: absolute;
+        left: 12px;
+        // bottom: 0px;
+       top: 850px;
+       margin-bottom: 15px;
+        // display: block;
+      }
+      
+      .cryptimg img {
+        height: 200px;
+        max-width: 50%;
+        // max-width: 340px;
+        border-radius: 10px;
+       
+        // display: block;
+      }
+      .nround {
+        width:50px;
+        height:50px;
+        background: transparent;
+        border: 2px dotted $mycolor;
+        border-radius: 100%;
+        position: absolute;
+        left: 20px;
+       top: 1080px;
+        animation-name: fornround;
+        animation-duration: 5s;
+        animation-iteration-count: 20;
+    
+      }
+      .round {
+        width: 50px;
+        height: 50px;
+        background: $white;
+        border: 2px dotted $mycolor;
+        border-radius: 100%;
+        position: absolute;
+        top: 1070px;
+        left: 10px;
+        animation-name: forround;
+        animation-duration: 5s;
+        animation-iteration-count: 20;
+       
+      }
+      #reg {
+        background: $mycolor;
+        border: $nill;
+        color: $white;
+        padding: 9px;
+        font-size: 16px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 4px rgba(0, 128, 128, 0.795);
+        margin-bottom: 10px;
+      }
+      
+      #trn {
+        background: $white;
+        border: 1px solid $mycolor;
+        color: $mycolor;
+        margin-left: 0px;
+        padding: 9px;
+        font-size: 16px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 4px rgba(0, 128, 128, 0.795);
+      }
+      footer {
+        position: relative;
+        
+      //   left: 10px;
+      //   bottom: 4px;
+        top: 40px;
+        border-top: 1px solid lightgray;
+        padding-top:30px ;
+        text-align: center;
+        padding-bottom: 30px;
+        
+        
+        }
+  }
+ 
+  
+  
+  
